@@ -1,5 +1,3 @@
-<include a CircleCI status badge, here>
-# Template:
 [![reemmohamedamr](https://circleci.com/gh/reemmohamedamr/project-ml-microservice-kubernetes.svg?style=svg)](https://app.circleci.com/pipelines/github/reemmohamedamr/project-ml-microservice-kubernetes)
 ## Project Overview
 
