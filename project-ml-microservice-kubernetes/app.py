@@ -20,7 +20,7 @@ def scale(payload):
 
 @app.route("/")
 def home():
-    html = f"<h3>Sklearn Prediction Home</h3>"
+    html = "<h3>Sklearn Prediction Home</h3>"
     return html.format(format)
 
 @app.route("/predict", methods=['POST'])
@@ -63,7 +63,9 @@ def predict():
     # get an output prediction from the pretrained model, clf
     prediction = list(clf.predict(scaled_payload))
     # TO DO:  Log the output prediction value
-    return jsonify({'prediction': prediction})
+    retVal = jsonify({'prediction': prediction})
+    LOG.info(f"prediction output: \n{retVal}")
+    return retVal
 
 if __name__ == "__main__":
     # load pretrained model as clf

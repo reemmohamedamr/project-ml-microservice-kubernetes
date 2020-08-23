@@ -5,7 +5,7 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath="6955528c00a5/api2"
 
 # Step 2:  
 # Authenticate & tag
